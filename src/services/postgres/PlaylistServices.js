@@ -67,8 +67,6 @@ class PlaylistService {
     if (!result.rowCount) {
       throw new InvariantError('Lagu gagal ditambahkan ke playlist');
     }
-
-    return result.rows[0].id;
   }
 
   async getPlaylistSongById(playlistId) {
